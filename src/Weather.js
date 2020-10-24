@@ -39,11 +39,11 @@ export default function Weather(props) {
               <span className="temperature" id="temp">
                 {props.temperature}
               </span>
-              <a href="#" id="celsius" className="active">
+              <a href="NAN" id="celsius" className="active">
                 °C
               </a>{" "}
               |
-              <a href="#" id="fahrenheit">
+              <a href="NAN" id="fahrenheit">
                 °F
               </a>
             </div>
