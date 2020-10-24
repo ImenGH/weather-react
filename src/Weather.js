@@ -3,7 +3,6 @@ import React from "react";
 import cloudy from "./images/cloudy.svg";
 import sunny from "./images/sunny.svg";
 import rain from "./images/rain.svg";
-import snow from "./images/snow.svg";
 
 export default function Weather(props) {
   return (
@@ -116,7 +115,7 @@ export default function Weather(props) {
 
             <img
               className="cloudy weather-icon"
-              src={cloudy}
+              src={rain}
               alt="cloudy"
               id="img-day2"
             />
