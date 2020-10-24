@@ -5,7 +5,7 @@ import sunny from "./images/sunny.svg";
 import rain from "./images/rain.svg";
 import snow from "./images/snow.svg";
 
-export default function Weather() {
+export default function Weather(props) {
   return (
     <div className="box-wrap">
       <form id="real-city" className="mb-2">
@@ -33,11 +33,13 @@ export default function Weather() {
       <div className="row currentWeather">
         <div className="col-4">
           <div className="clearfix">
-            <h1 id="city"></h1>
-            <h4 id="visibility"></h4>
+            <h1 id="city">{props.city}</h1>
+            <h4 id="visibility">{props.description}</h4>
             <br />
             <div>
-              <span className="temperature" id="temp"></span>
+              <span className="temperature" id="temp">
+                {props.temperature}
+              </span>
               <a href="#" id="celsius" className="active">
                 °C
               </a>{" "}
@@ -60,7 +62,7 @@ export default function Weather() {
                 data-icon="wi-humidity"
                 data-inline="false"
               ></span>
-              <span id="humidity"></span> %
+              <span id="humidity">{props.humidity}</span> %
             </div>
 
             <div className="col-12">
@@ -69,7 +71,7 @@ export default function Weather() {
                 data-icon="bx:bx-wind"
                 data-inline="false"
               ></span>
-              <span id="windy"></span> m/s
+              <span id="windy">{props.wind}</span> m/s
             </div>
           </div>
         </div>
@@ -78,14 +80,14 @@ export default function Weather() {
       <br />
       <div className="row date">
         <div className="col-4">
-          <span id="actual-month"></span>
-          <span id="actual-date"> </span>
+          <span id="actual-month">{props.month}</span>
+          <span id="actual-date"> {props.date}</span>
         </div>
         <div className="col-4">
-          <span id="today"></span>
+          <span id="today">{props.day}</span>
         </div>
         <div className="col-4">
-          <span id="actual-hour"></span>
+          <span id="actual-hour">{props.hour}</span>
         </div>
       </div>
 
@@ -94,7 +96,7 @@ export default function Weather() {
       <div className="row weekWeather">
         <div className="col-3">
           <div className="friday">
-            <h5 id="day-one"></h5>
+            <h5 id="day-one">{props.day1}</h5>
 
             <img
               className="cloudy weather-icon"
@@ -103,13 +105,14 @@ export default function Weather() {
               id="img-day1"
             />
             <div>
-              <b id="max-1"></b>°/ <span id="min-1"></span>°
+              <b id="max-1">{props.tempmax1}</b>°/{" "}
+              <span id="min-1">{props.tempmin1}</span>°
             </div>
           </div>
         </div>
         <div className="col-3">
           <div className="saturday">
-            <h5 id="day-two"></h5>
+            <h5 id="day-two">{props.day2}</h5>
 
             <img
               className="cloudy weather-icon"
@@ -118,13 +121,14 @@ export default function Weather() {
               id="img-day2"
             />
             <div>
-              <b id="max-2"></b>°/ <span id="min-2"></span>°
+              <b id="max-2">{props.tempmax2}</b>°/{" "}
+              <span id="min-2">{props.tempmin2}</span>°
             </div>
           </div>
         </div>
         <div className="col-3">
           <div className="sunday">
-            <h5 id="day-three"></h5>
+            <h5 id="day-three">{props.day3}</h5>
 
             <img
               className="sunny weather-icon"
@@ -133,13 +137,14 @@ export default function Weather() {
               id="img-day3"
             />
             <div>
-              <b id="max-3"></b>°/ <span id="min-3"></span>°
+              <b id="max-3">{props.tempmax3}</b>°/{" "}
+              <span id="min-3">{props.tempmin3}</span>°
             </div>
           </div>
         </div>
         <div className="col-3">
           <div className="monday">
-            <h5 id="day-four"></h5>
+            <h5 id="day-four">{props.day4}</h5>
 
             <img
               className="cloudy weather-icon"
@@ -148,7 +153,8 @@ export default function Weather() {
               id="img-day4"
             />
             <div>
-              <b id="max-4"></b>°/ <span id="min-4"></span>°
+              <b id="max-4">{props.tempmax4}</b>°/{" "}
+              <span id="min-4">{props.tempmin4}</span>°
             </div>
           </div>
         </div>
