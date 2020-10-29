@@ -1,4 +1,5 @@
 import React from "react";
+import "./Weather.css";
 
 import cloudy from "./images/cloudy.svg";
 import sunny from "./images/sunny.svg";
@@ -6,7 +7,7 @@ import rain from "./images/rain.svg";
 
 export default function Weather(props) {
   return (
-    <div className="box-wrap">
+    <div className="weather">
       <form id="real-city" className="mb-2">
         <div className="row">
           <div className="col-9">
@@ -15,8 +16,8 @@ export default function Weather(props) {
               placeholder="Enter a city.."
               className="form-control"
               id="city-input"
-              autocomplete="off"
-              autofocus="on"
+              autoComplete="off"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">

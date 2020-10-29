@@ -1,9 +1,10 @@
 .footer {
   text-align: center;
+  font-size: 13px;
 }
-#name {
+.name {
   color: #ff6372;
 }
-#source {
+.source {
   color: #ff6372;
 }
