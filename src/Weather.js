@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ActualDate from "./ActualDate";
 import "./Weather.css";
 import axios from "axios";
 
@@ -11,12 +12,14 @@ export default function Weather(props) {
 
   function handleResponse(response) {
     console.log(response);
+    console.log(response.data.dt);
     setWeatherData({
       ready: true,
       temperature: Math.round(response.data.main.temp),
       city: response.data.name,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].main,
       iconUrl: "https:/ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
     });
@@ -96,18 +99,7 @@ export default function Weather(props) {
         </div>
         <br />
         <br />
-        <div className="row date">
-          <div className="col-4">
-            <span id="actual-month">month</span>
-            <span id="actual-date"> date</span>
-          </div>
-          <div className="col-4">
-            <span id="today">day</span>
-          </div>
-          <div className="col-4">
-            <span id="actual-hour">hour</span>
-          </div>
-        </div>
+        <ActualDate date={weatherData.date} />
 
         <hr />
 
