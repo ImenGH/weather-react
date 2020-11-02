@@ -16,22 +16,10 @@
   text-align: center;
   margin-top: 30px;
 }
-.fa-circle {
+.climat {
   font-size: 100px;
-  color: #ff6372;
 }
-.fa-cloud {
-  font-size: 100px;
-  color: #ff6372;
-}
-.fa-cloud-showers-heavy {
-  font-size: 100px;
-  color: #ff6372;
-}
-.fa-snowflake {
-  font-size: 100px;
-  color: #ff6372;
-}
+
 .precipitation {
   text-align: center;
   margin-top: 30px;
