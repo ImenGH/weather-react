@@ -20,7 +20,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].main,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
     });
   }
   function search() {
