@@ -77,3 +77,6 @@ h5 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.weather canvas {
+  margin-left: 20px;
+}
