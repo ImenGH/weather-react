@@ -13,10 +13,7 @@ export default function Footer() {
         </div>
         <div>
           <a href="https://github.com/ImenGH/weather-react">
-            <i className="fab fa-github" className="source">
-              {" "}
-              Source Code
-            </i>
+            <i className="fab fa-github source"> Source Code</i>
           </a>
         </div>
       </small>
