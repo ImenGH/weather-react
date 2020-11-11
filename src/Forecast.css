@@ -1,0 +1,7 @@
+.forecast canvas {
+  display: block;
+  margin: 10px auto;
+}
+.forecast {
+  text-align: center;
+}
