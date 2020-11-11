@@ -68,7 +68,7 @@ export default function Weather(props) {
         <ActualDate date={weatherData.date} />
 
         <hr />
-        <Forecast />
+        <Forecast city={weatherData.city} />
       </div>
     );
   } else {

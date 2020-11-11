@@ -30,13 +30,6 @@
   font-size: 60px;
 }
 
-.cloudy {
-  width: 60%;
-}
-.sunny {
-  width: 65%;
-}
-
 .iconify {
   width: 50px;
   color: #6c63ff;
@@ -66,13 +59,6 @@ h5 {
   margin-bottom: 10px;
 }
 
-.active {
-  color: slategrey;
-  cursor: default;
-}
-.active:hover {
-  text-decoration: none;
-}
 .weather-icon {
   margin-top: 20px;
   margin-bottom: 20px;

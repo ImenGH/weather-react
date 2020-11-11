@@ -6,16 +6,13 @@ export default function Footer() {
     <div>
       <small className="footer">
         <div className="name">
-          Created by
-          <a
-            href="https://www.linkedin.com/in/imen-grab-0b2562127/"
-            target="_blank"
-          >
+          Created by{" "}
+          <a href="https://www.linkedin.com/in/imen-grab-0b2562127/">
             Imen Grab
           </a>
         </div>
-        <div className="github">
-          <a href="https://github.com/ImenGH/weather-react" target="_blank">
+        <div>
+          <a href="https://github.com/ImenGH/weather-react">
             <i className="fab fa-github" className="source">
               {" "}
               Source Code
